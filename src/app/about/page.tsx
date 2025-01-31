@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description: "Learn more about Mercado 360, our mission, and our commitment to quality and top-notch customer service."
+};  
+
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto p-6 bg-gray-50 rounded-lg shadow-lg space-y-6">

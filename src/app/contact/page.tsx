@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description: "Have questions? Get in touch with Mercado 360. We're here to help with any inquiries about our products and services."
+};  
+
 export default function ContactUsPage() {
     return (
       <div className="max-w-4xl mx-auto p-6 bg-gray-50 rounded-lg shadow-lg space-y-6">

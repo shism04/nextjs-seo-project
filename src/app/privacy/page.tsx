@@ -1,3 +1,14 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "Read our Privacy Policy to learn how we protect your data at Mercado 360.",
+  robots:{
+    index:false,
+    follow:true
+  }
+}; 
+
 export default function PrivacyPolicy() {
   return (
     <div className="max-w-prose m-auto space-y-3">

@@ -2,6 +2,13 @@ import { delay } from "@/lib/utils";
 import { ProductsResponse } from "@/models/Products";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "All Products",
+  description: "Browse our full catalog of products at Mercado 360. Find the best deals on fragrances, cosmetics, furniture, and more."
+}; 
+
 
 const renderRating = (rating: number) => {
   const stars = [];
@@ -35,7 +42,7 @@ const renderRating = (rating: number) => {
           {products.map((product) => (
             <Link
               key={product.id}
-              href={`/product/${product.id}`}
+              href={`/${product.category}/${product.title.toLowerCase().replace(/\s+/g, "-")}`}
             >
               <div
                 key={product.id}
